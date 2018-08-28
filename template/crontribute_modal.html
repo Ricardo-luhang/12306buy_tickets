@@ -1,0 +1,45 @@
+{# My Modal 模态框 #}
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal-1" class="modal fade">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h4 class="modal-title">登录12306</h4>
+      </div>
+      <div class="modal-body">
+
+          <form class="form-horizontal" role="form" action="/login/" method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                  <label for="inputQuestionTitle" class="col-lg-3 control-label">12306账号</label>
+                  <div class="col-lg-9">
+                      <input type="text" class="form-control" id="inputUserName" name="username" placeholder="请输入12306账号">
+                  </div>
+              </div>
+                <div class="form-group">
+                    <label for="inputQuestionTitle" class="col-lg-3 control-label">密码</label>
+                    <div class="col-lg-9">
+                        <input type="password" class="form-control" id="inputPassWord" name="password" placeholder="请输入密码">
+                    </div>
+                </div>
+              <input id="train_no" type="text" name="train_no" value="" hidden>
+              <input id="train_data" type="text" name="train_data" value="" hidden>
+              <input id="from_data" type="text" name="from_data" value="" hidden>
+              <input id="from_station" type="text" name="from_station" value="" hidden>
+              <input id="times" type="text" name="times" value="" hidden>
+              <input id="to_data" type="text" name="to_data" value="" hidden>
+              <input id="to_station" type="text" name="to_station" value="" hidden>
+              <input id="seat_type" type="text" name="seat_type" value="" hidden>
+               <div class="" id="jsLoginTips"></div>
+              <div class="form-group">
+                  <div class="col-lg-offset-2 col-lg-10">
+                      <button type="submit" id="mybutton" class="btn btn-default">登录</button>
+                  </div>
+              </div>
+          </form>
+
+      </div>
+
+  </div>
+</div>
+</div>

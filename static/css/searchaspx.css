@@ -1,0 +1,3713 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #FFF;
+}
+
+body {
+    background-color: #FFF;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", SimHei, SimSun, sans-serif;
+    color: #333;
+}
+
+img, fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input, textarea {
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    color: #3480e2;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #004fb3;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 100%;
+}
+
+ul, li, ol, li {
+    list-style: none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+dfn {
+    margin-right: 2px;
+    font: normal 12px Arial;
+}
+
+section {
+    display: block;
+}
+
+select {
+    padding: 1px;
+    font-family: Arial, Simsun, sans-serif;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+}
+
+.base_bd {
+    max-width: 1180px;
+    min-width: 980px;
+    width: auto;
+    margin: 0 auto;
+    *zoom: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.base_bd:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt17 {
+    margin-top: 17px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt14 {
+    margin-top: 14px;
+}
+
+.yellowBtn {
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+    background: #FF9913;
+    color: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.yellowBtn:hover {
+    color: #fff;
+    background: #FFA200;
+}
+
+/* notice Start */
+.block_notice {
+    max-width: 1178px;
+    min-width: 978px;
+    width: auto;
+    margin: 0 auto;
+    *zoom: 1;
+    height: 32px;
+    line-height: 32px;
+    background: #fff8dd;
+    border: 1px solid #FFE19B;
+    margin-bottom: 10px;
+    color: #ffab00;
+    font-size: 12px;
+}
+
+.block_notice .icon_close {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ffab00;
+    font-weight: 200
+}
+
+.block_notice .icon_close:hover {
+    color: #F79700;
+}
+
+.notice_tips {
+    background: #ffab00;
+    margin-right: 10px;
+    height: 32px;
+    padding: 0 10px;
+    color: #fff;
+    float: left
+}
+
+/* notice End */
+
+/* search Start*/
+.search_box {
+    height: 60px;
+    line-height: 20px;
+    padding: 20px 40px;
+    background: #F0F0F0;
+}
+
+.search_box ul li {
+    float: left;
+    height: 23px;
+}
+
+.search_sel {
+    width: 115px;
+}
+
+.search_sel select {
+    width: 80px;
+    height: 23px;
+    line-height: 23px;
+[;
+    line-height: 17px;
+] border: 1 px solid #E0E0E0;
+}
+
+.txt100 {
+    width: 95px;
+    border: 1px solid #E0E0E0;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+.search_region_lft {
+    width: 120px;
+}
+
+.search_exchanged, .search_date_lft, .search_date_rit {
+    width: 80px;
+}
+
+.search_exchanged {
+    position: relative;
+}
+
+.search_date_lft, .search_date_rit {
+    color: #0C0C0C;
+}
+
+.search_region_rit, .search_dateInput_lft {
+    width: 125px;
+}
+
+.search_dateInput_rit {
+    width: 205px;
+}
+
+.blueBtn {
+    background: #2477E3;
+    color: #fff;
+    border: 0;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.blueBtn:hover, .exchangedBtn:hover {
+    background: #004FB3;
+    cursor: pointer;
+    color: #fff;
+}
+
+.exchangedBtn {
+    width: 22px;
+    height: 22px;
+    line-height: 20px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    background: #2477E3;
+    margin-left: 18px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.exchangedBtn:after, .exchangedBtn:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 17px;
+    background: #E0E0E0;
+    top: 10px;
+}
+
+.exchangedBtn:after {
+    left: 22px;
+}
+
+.exchangedBtn:before {
+    right: 22px;
+}
+
+/* search End */
+/*bargain Start*/
+.airfare_special {
+    min-height: 70px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    float: left;
+    width: 66.4%;
+    position: relative;
+}
+
+.airfare_special dt {
+    width: 40px;
+    background: #F0F0F0;
+    min-height: 70px;
+    float: left;
+}
+
+.airfare_special dt span {
+    width: 13px;
+    display: block;
+    line-height: 16px;
+    padding-left: 11px;
+    font-size: 12px;
+    position: relative;
+    color: #999;
+}
+
+.aircraft {
+    width: 21px;
+    height: 70px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -301px 7px no-repeat;
+    display: block;
+    margin: 2px 0 0 8px;
+}
+
+.bus {
+    width: 22px;
+    height: 70px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -257px 8px no-repeat;
+    display: block;
+    margin: 2px 0 0 8px;
+}
+
+.airfare_special dd {
+    width: 93%;
+    color: #666;
+}
+
+.airfare_special dd .airfare6 small {
+    font-size: 12px;
+}
+
+.airfare1, .airfare2, .airfare3, .airfare4, .airfare5, .airfare6, .airfare_special dd {
+    float: left;
+}
+
+.airfare1, .airfare2, .airfare3, .airfare4, .airfare5, .airfare6 {
+    height: 70px;
+}
+
+.airfare6 {
+    position: absolute;
+    left: 90.5%;
+}
+
+.airfare1 {
+    width: 15%;
+    padding-left: 3%;
+}
+
+.airfare1 .atop {
+    padding-top: 12px;
+    height: 25px;
+}
+
+.airfare2 {
+    width: 18%;
+}
+
+.airfare2 .atop {
+    padding-top: 10px;
+    height: 28px;
+}
+
+.airfare2 i {
+    font-size: 14px;
+}
+
+.airfare2 em {
+    font-size: 12px;
+}
+
+.airfare2 small {
+    font-size: 12px;
+    color: #2477e3;
+    border-bottom: 1px dashed #2477e3;
+    cursor: pointer;
+}
+
+.airfare2 b {
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 5px;
+    display: block;
+}
+
+.airfare2 span {
+    display: block;
+    padding-top: 2px;
+}
+
+.airfare3 {
+    width: 24%;
+}
+
+.airfare3 .atop {
+    padding-top: 11px;
+    height: 25px;
+}
+
+.shi_icon, .zhong_icon, .guo_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: -3px;
+}
+
+.airfare3 span {
+    padding-left: 10px;
+}
+
+.airfare4 {
+    width: 16%;
+}
+
+.airfare4 .atop {
+    padding-top: 25px;
+}
+
+.airfare5 {
+    width: 16%;
+}
+
+.airfare5 .atop {
+    padding-top: 26px;
+}
+
+.airfare5 .atop small {
+    font-size: 12px;
+    color: #fa6700;
+}
+
+.airfare5 .atop big {
+    font-size: 14px;
+    color: #fa6700;
+    font-weight: bold;
+}
+
+.airfare6 .atop {
+    padding-top: 16px;
+}
+
+.airfare6 .atop small {
+    font-size: 12px;
+}
+
+.ktzh {
+    height: 140px;
+}
+
+.ktzh dt {
+    height: 140px;
+}
+
+.ktzh dt span {
+    width: 21px;
+    height: 114px;
+    display: block;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -346px 0px;
+    margin: 18px 0 0 8px;
+}
+
+.ktzh .airfare5 .atop {
+    padding-top: 6px;
+}
+
+.ktzh .airfare6 .atop {
+    padding-top: 10px;
+}
+
+.bargain_zhuan {
+    position: absolute;
+    left: 8%;
+    top: 60px;
+    border-bottom: 1px dashed #ccc;
+    width: 58%;
+    height: 10px;
+    text-align: center;
+}
+
+.bargain_zhuan i {
+    background: #fff;
+    color: #999;
+}
+
+.bargain_zhuan i.bl {
+    padding: 0 10px 0 30px;
+}
+
+.bargain_zhuan i.br {
+    padding: 0 30px 0 10px;
+}
+
+.ktzh .airfare5 {
+    position: absolute;
+    left: 76.2%;
+    top: 46px;
+    width: 10%;
+}
+
+.ktzh .airfare6 {
+    position: absolute;
+    left: 90.5%;
+    top: 46px;
+}
+
+.shi_icon {
+    color: #2577e3;
+}
+
+.zhong_icon {
+    color: #ff9913;
+}
+
+.guo_icon {
+    color: #0fa400;
+}
+
+.fan {
+    height: 15px;
+    border: 1px solid #FF9913;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    float: left;
+}
+
+.fan b, .fan strong {
+    font-weight: normal;
+}
+
+.fan b {
+    line-height: 15px;
+    text-align: center;
+    width: 17px;
+    font-size: 12px;
+    float: left;
+    background: #FF9913;
+    color: #fff;
+}
+
+.fan strong {
+    float: left;
+    font-size: 12px;
+    padding: 0 2px;
+    color: #FF9913;
+}
+
+.fan strong i {
+    float: left;
+    line-height: 17px;
+    font-style: normal;
+}
+
+/*bargain End*/
+
+/*numberList Start*/
+.trainList_box {
+    float: left;
+    width: 100%;
+}
+
+.trainList_title {
+    height: 58px;
+    padding-top: 10px;
+}
+
+.trainList_title h2 {
+    float: left;
+    line-height: 58px;
+}
+
+.trainList_title h2 strong {
+    float: left;
+    font-size: 22px;
+    color: #2577E3;
+    font-weight: normal;
+}
+
+.trainList_title h2 i {
+    float: left;
+}
+
+.trainList_title span {
+    float: left;
+    font-size: 12px;
+    color: #2577E3;
+    padding: 27px 0 0 15px;
+}
+
+.trainList_title b {
+    float: left;
+    font-weight: normal;
+    padding: 25px 0 0 10px;
+}
+
+.trainList_title span.fr {
+    float: right;
+}
+
+.calendar {
+    height: 60px;
+    background: #F0F0F0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cal_left {
+    position: absolute;
+    width: 40px;
+    left: 0;
+    top: 0;
+}
+
+.cal_left a i {
+    width: 17px;
+    height: 27px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -49px -237px;
+    display: block;
+    margin: 5px 0 0 15px;
+    cursor: pointer;
+}
+
+.cal_right a i {
+    width: 17px;
+    height: 27px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -77px -237px;
+    display: block;
+    margin: 5px 0 0 15px;
+    cursor: pointer;
+}
+
+.cal_left:hover a i {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") 0px -237px;
+}
+
+.cal_right:hover a i {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -26px -237px;
+}
+
+.cal_right {
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.cal_middle {
+    height: 59px;
+    width: 90%;
+    margin-left: 40px;
+}
+
+.cal_middle li {
+    float: left;
+    width: 14.2%;
+}
+
+.cal_middle li a {
+    padding-top: 10px;
+    height: 48px;
+}
+
+.cal_middle li a.current {
+    border-top: 7px solid #2E7DE4;
+    padding-top: 4px;
+    background: #fff;
+    height: 49px;
+    border-bottom: 0;
+}
+
+.cal_middle li a.current:hover {
+    background: #fff;
+    color: #000;
+    border-top: 7px solid #2E7DE4;
+}
+
+.cal_middle li a:hover {
+    background: #2577E3;
+    color: #fff;
+    border-top: 1px solid #2E7DE4;
+}
+
+.calendar a {
+    display: block;
+    height: 43px;
+    padding-top: 15px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #E8E8E8;
+    text-align: center;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513");
+    background-position: 0px -150px;
+    background-repeat: no-repeat
+}
+
+.search_cate {
+    margin-bottom: 5px;
+    padding: 0px 15px 10px 15px;
+    position: relative;
+    *zoom: 1;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.search_cate:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.search_cate_list {
+    height: 20px;
+    margin-top: 17px;
+}
+
+.search_cate_list dd, .search_cate_list dt {
+    float: left;
+    line-height: 20px;
+    height: 20px;
+}
+
+.checkbox span {
+    float: left;
+}
+
+.search_cate_list dd {
+    margin-right: 20px;
+}
+
+.search_cate_list dd label {
+    cursor: pointer;
+}
+
+.search_cate_list dd.no_limit {
+    width: 45px;
+}
+
+.search_cate_list dd.no_limit label.selected {
+    color: #2E7DE4;
+}
+
+.search_cate_list dd span {
+    padding-left: 10px;
+}
+
+.current .checkbox {
+    background-position: -30px -150px;
+}
+
+.search_more {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+    line-height: 20px;
+}
+
+.topic_box {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    border-top: 1px solid #E8E8E8;
+    background: #F0F0F0;
+    padding: 0 2%;
+    position: relative;
+}
+
+.topic_box dd {
+    color: #777;
+    padding: 0;
+}
+
+.topic_box dd.w5 {
+    padding-left: 12px;
+}
+
+.topic_box .w6 {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.topic_box dd label {
+    color: #666;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon_blue_up .on,
+.icon_blue_down .on,
+.icon_gray_up .on,
+.icon_gray_down .on {
+    width: 8px;
+    height: 12px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 0 0 5px;
+    *margin: 0 0 0 5px;
+}
+
+/*.icon_gray_down .on{width:8px;height:12px;position:absolute;right:-11px;top:4px;}*/
+.topic_box dd label.icon_arrow_up {
+    color: #468BE6;
+}
+
+.icon_blue_up .on {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -115px -207px;
+}
+
+.icon_blue_down .on {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -166px -229px;
+}
+
+.icon_gray_up .on {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -184px -229px;
+}
+
+.icon_gray_down .on {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -133px -207px;
+}
+
+.topic_box dt {
+    text-align: right;
+    color: #2477E3;
+    padding-right: 15px;
+    position: relative;
+    cursor: pointer; /*width:75px;*/
+    height: 36px;
+    line-height: 32px;
+    line-height: 36px \0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.SearchAgain {
+    height: 130px;
+    background: #FFFEF1;
+}
+
+.SearchAgainTxt {
+    padding: 45px 0 0 270px;
+}
+
+.SearchAgainTxt dt {
+    font-size: 16px;
+    position: relative;
+}
+
+.SearchAgainTxt dt i {
+    left: -60px;
+    top: 2px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -331px -229px;
+}
+
+.SearchAgainTxt dd {
+    font-size: 14px;
+    color: #777;
+}
+
+.w1, .w2, .w3, .w4, .w5 {
+    float: left;
+    padding-top: 5px;
+}
+
+.w6 {
+    float: right;
+}
+
+.w1 {
+    width: 12%;
+}
+
+.w2 {
+    width: 16%;
+    text-align: center
+}
+
+.w3 {
+    width: 20%;
+    text-align: center;
+}
+
+.w4 {
+    width: 16%;
+    text-align: center
+}
+
+.w5 {
+    width: 25%;
+}
+
+.railway_list {
+    padding: 3% 2%;
+    height: 1%;
+    min-height: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.railway_list:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.railway_list .w1 div,
+.railway_list .w2 div,
+.railway_list .w3 div {
+    height: 27px;
+    line-height: 27px;
+}
+
+.railway_list .w1 div label {
+    position: relative;
+    cursor: pointer;
+}
+
+.railway_list .w2 div {
+    color: #333;
+}
+
+.railway_list .w2 div strong {
+    font-size: 14px;
+}
+
+.railway_list .w4 {
+    position: relative
+}
+
+.railway_list .w4 .haoshi {
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+.railway_list .w4 .haoshi .icon-sfz {
+    width: 17px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(http://pic.c-ctrip.com/train/railway_v2/icon-sfz.png) no-repeat;
+    background-size: 17px 13px;
+    margin: -2px 0 0 5px;
+}
+
+.railway_list .w4 .line {
+    width: 120px;
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.railway_list .w4 .line .shi, .railway_list .w4 .line .zhong {
+    width: 8px;
+    height: 8px;
+    border-radius: 12px;
+    background: #e0e0e0;
+    position: absolute;
+    top: -3px;
+}
+
+.railway_list .w4 .line .shi {
+    left: -4px;
+}
+
+.railway_list .w4 .line .zhong {
+    right: -4px
+}
+
+.railway_list .w4 .line .guo {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #e0e0e0;
+    background: #fff
+}
+
+.railway_list .w5 div {
+    height: 27px;
+    line-height: 27px;
+}
+
+.railway_list .w5 div span {
+    color: #333;
+    display: inline-block;
+    width: 56px;
+    text-align: right;
+}
+
+.railway_list .w5 div small {
+    padding-left: 10px;
+    color: #FA6700;
+}
+
+.railway_list .w5 div b {
+    color: #FA6700;
+    font-size: 14px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 23%;
+}
+
+.railway_list .w5 div b a {
+    color: #FA6700;
+    border-bottom: 1px dashed #FA6700;
+    float: left;
+    margin-bottom: -3px;
+}
+
+.railway_list .cord div b a {
+    color: #999;
+    border-bottom: 1px dashed #FA6700;
+    float: left;
+    margin-bottom: -3px;
+}
+
+.railway_list .w5 div strong {
+    color: #333;
+    width: 35%;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    font-weight: normal;
+    text-align: right;
+    line-height: 24px;
+}
+
+.railway_list .w5 div strong em {
+    color: #ff9913;
+}
+
+.railway_list .w6 div {
+    padding-top: 4.8px;
+    height: 24px;
+}
+
+.railway_list .w5 div i {
+    cursor: pointer;
+    padding-left: 3px \9;
+}
+
+.railway_list .w2 div i {
+    border-bottom: 1px dashed #3480e2;
+    color: #3480e2;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.railway_list .w2 div label {
+    font-size: 12px;
+}
+
+.railway_list .w5 div i b {
+    line-height: 16px;
+}
+
+.qp_btn1 {
+    display: block;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    line-height: 23px \0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background: #2E7DE4;
+}
+
+.qp_btn1:hover {
+    background: #004fb3; /*#F79700;*/
+    color: #fff;
+}
+
+.qp_btn2 {
+    display: block;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    line-height: 23px \0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background: #ff9913;
+}
+
+.qp_btn2:hover {
+    background: #ff8400; /*#F79700;*/
+    color: #fff;
+}
+
+.qp_btn3 {
+    display: block;
+    width: 58px;
+    height: 23px;
+    line-height: 23px;
+    line-height: 23px \0;
+    border: 1px solid #FF9913;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* text-align:center;*/
+    color: #FF9913;
+}
+
+.qp_btn3:hover {
+    border: 1px solid #F79700;
+    color: #fff;
+    background: #FF8400;
+}
+
+.qp_btn4 {
+    display: block;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    line-height: 30px \0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background: #ccc;
+    cursor: default;
+}
+
+.qp_btn4:hover {
+    color: #fff;
+}
+
+.qp_btn5 {
+    display: block;
+    cursor: default;
+    width: 58px;
+    height: 23px;
+    line-height: 23px;
+    line-height: 23px \0;
+    border: 1px solid #999999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* text-align:center;*/
+    color: #999999;
+}
+
+.icon_show,
+.icon_hide {
+    width: 8px;
+    height: 4px;
+    display: inline-block; /**zoom:1;*display:inline;position:absolute;left:46px;top:10px;*/
+    position: relative;
+    vertical-align: middle;
+    margin-left: 3px;
+    *margin: 3px 0 0 5px;
+}
+
+.icon_show {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -97px -205px;
+}
+
+.icon_hide {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -97px -215px;
+}
+
+.station {
+    max-height: 250px;
+    padding-right: 0px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.station_box {
+    background: #F0F0F0;
+    margin-bottom: 6px;
+}
+
+.station_top {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 114px;
+}
+
+.station_top li {
+    float: left;
+    width: 27%;
+    color: #666;
+    font-size: 12px;
+}
+
+.station_top li.st1 {
+    width: 31%;
+}
+
+.station_top li.st2 {
+    width: 24%;
+}
+
+.station_top li.st3 {
+    width: 32%;
+}
+
+.station_top li.st4 {
+    width: 10%;
+}
+
+.station_lst {
+    padding-left: 26px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.station_lst dt, .station_lst dd {
+    float: left;
+}
+
+.station_lst dt i {
+    font-style: normal;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    line-height: 15px \9;
+    text-align: center;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    border: 1px solid #ccc;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    color: #999;
+    font-size: 12px;
+    margin-top: 7px \9;
+}
+
+.d1 {
+    width: 11.7%;
+}
+
+.d2 {
+    width: 28.5%;
+}
+
+.d3 {
+    width: 21.5%;
+}
+
+.d4 {
+    width: 29%;
+}
+
+.d5 {
+    width: 8%;
+}
+
+.station_lst.overdue,
+.station .on dd.d3 {
+    color: #999;
+}
+
+.station_lst.overdue dt i {
+    color: #ccc;
+}
+
+.station .on dt i {
+    color: #2577E3;
+    border: 1px solid #2577E3;
+}
+
+.top2 {
+    color: #999;
+}
+
+.station .on dd.d2, .station .on dd.d4 {
+    color: #2577E3;
+}
+
+.railway_list .w5 div p {
+    color: #999;
+    font-size: 12px;
+    text-align: right;
+    padding: 2px 10px 0 0;
+}
+
+.railway_list .w5 div p i {
+    border-bottom: 1px dashed #2577e3;
+    color: #2577e3;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.btm_txt {
+    position: absolute;
+    bottom: 2px;
+    right: 18px;
+    text-align: right;
+    width: 200px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.railway_list .TxtRed {
+    color: #ff443f;
+}
+
+.railway_list .TxtGreen {
+    color: #0fa400;
+}
+
+.Ticket_Top {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 2%;
+    background: #f7f8f9;
+    position: relative;
+}
+
+.Ticket_Top dt {
+    float: left;
+    color: #333;
+    padding-left: 4%;
+}
+
+.Ticket_Top dd { /*float:right;*/
+    color: #999;
+    position: relative;
+    font-size: 12px;
+}
+
+.scIcon1 {
+    width: 25px;
+    height: 19px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") 0px -200px;
+    vertical-align: middle;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.Ticket_Top dd i {
+    width: 20px;
+    height: 7px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -257px -262px;
+    position: absolute;
+    right: 25px;
+    top: -7px;
+}
+
+.Ticket {
+    background: #f7f8f9;
+    border-top: 1px dashed #eee;
+    width: 100%;
+}
+
+.Ticket .w1 div big {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #FF9F22;
+    font-size: 12px;
+    width: 56px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 3px;
+}
+
+.Ticket .railway_list {
+    border: 0;
+}
+
+.Ticket_btm {
+    padding-bottom: 10px;
+    padding-left: 2%;
+    color: #999;
+}
+
+.Ticket_btm span {
+    color: #FA6700;
+}
+
+.Ticket_btm small {
+    color: #FA6700;
+    padding-left: 5px;
+}
+
+.Ticket_btm b {
+    color: #FA6700;
+}
+
+.Ticket_btm p {
+    padding-left: 3.6%;
+}
+
+.railway_list div.cord small,
+.railway_list div.cord b,
+.railway_list div.cord strong {
+    color: #999;
+}
+
+.scIcon2 {
+    width: 28px;
+    height: 21px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -35px -198px;
+    vertical-align: middle;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.gif_Box {
+    border-top: 1px dashed #eee;
+    background: #F7F7F7;
+    height: 85px;
+    padding-top: 35px;
+    text-align: center;
+    color: #666;
+}
+
+.gif_Box img {
+    vertical-align: middle;
+    width: 53px;
+    height: 44px;
+}
+
+/*numberList End*/
+/*常见问题*/
+.txtLst {
+    padding: 10px 0px 10px 10px;
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.txtLst dd {
+    height: 1%;
+    min-height: 20px;
+}
+
+.txtLst dd:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.txtLst label {
+    padding-right: 22px;
+    word-break: keep-all;
+    white-space: nowrap;
+    float: left;
+}
+
+.txtLst label a {
+    color: #333;
+}
+
+.txtLst label a:hover {
+    text-decoration: underline;
+}
+
+/*hotel Start*/
+.hotel_box {
+    float: right;
+    width: 32%;
+    margin-top: 67px;
+}
+
+.hotel_tit {
+    height: 43px;
+    line-height: 43px;
+    background: #F1F1F1;
+    padding: 0 2%;
+}
+
+.hotel_tit strong {
+    float: left;
+    font-weight: normal;
+}
+
+.hotel_tit strong a {
+    float: inherit;
+    color: #666;
+}
+
+.hotel_tit strong a:hover {
+    text-decoration: underline;
+}
+
+.hotel_tit a {
+    float: right;
+}
+
+.screen {
+    height: 34px;
+    padding-top: 4px;
+    border-left: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    position: relative;
+    z-index: 20;
+}
+
+.screen dt, .screen dd {
+    float: left;
+    border-bottom: 1px solid #E8E8E8;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.screen dt {
+    width: 15%;
+    color: #333;
+}
+
+.hot1 {
+    width: 25%;
+}
+
+.hot2 {
+    width: 35%;
+}
+
+.hot3 {
+    width: 25%;
+}
+
+.screen dd label {
+    height: 33px;
+    color: #333;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.screen dd.on {
+    background: #f7f8f9;
+    border-bottom: 0;
+    position: relative;
+    z-index: 30;
+}
+
+.screen dd.on label {
+    border: 1px solid #E8E8E8;
+    border-bottom: 0;
+    line-height: 32px;
+    cursor: default;
+}
+
+.screen dd label i {
+    width: 8px;
+    height: 4px;
+    right: 12px;
+    top: 16px;
+    position: absolute;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -97px -215px;
+}
+
+.screen .hotel_city dd label {
+    cursor: default;
+}
+
+.hotel_city {
+    border-top: 1px solid #E8E8E8;
+    position: absolute;
+    left: 0;
+    z-index: 30;
+    background: #fff;
+    width: 100%;
+}
+
+.hotel_city dt {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 2%;
+    width: 96%;
+    text-align: left;
+    background: #f7f8f9;
+    color: #9F9F9F;
+}
+
+.hotel_city dd {
+    height: 1%;
+    min-height: 20px;
+    padding: 4% 6%;
+    width: 88%
+}
+
+.hotel_city dd:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.hotel_city dd label {
+    font-size: 12px;
+    display: block;
+    float: left;
+    width: 33%;
+    height: 24px;
+    line-height: 24px;
+}
+
+.hotel_city dd label a {
+    color: #666;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.hotelLstBox {
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    position: relative;
+    z-index: 10;
+}
+
+.hotel_list {
+    padding: 4%;
+    border-bottom: 1px solid #E8E8E8;
+    height: 1%;
+    min-height: 20px;
+}
+
+.hotel_list:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.hotel_lft_img {
+    width: 58px;
+    height: 66px;
+    overflow: hidden;
+    float: left;
+}
+
+.hotel_lft_img img {
+    width: 63px;
+    height: 63px;
+}
+
+.hotel_center {
+    float: left;
+    padding-left: 2%;
+    width: 59.3%;
+}
+
+.hotel_center li {
+    height: 22px;
+    line-height: 22px;
+}
+
+.hotel_center li strong {
+    float: left;
+    font-weight: normal;
+}
+
+.hotel_center li strong a {
+    color: #666;
+}
+
+.hotel_center li strong a:hover {
+    text-decoration: underline;
+}
+
+.hotel_center li label {
+    float: right;
+    font-size: 12px;
+}
+
+.hotel_center li label big {
+    color: #FCA028;
+}
+
+.hotel_center li label span {
+    color: #999;
+}
+
+.hotel_center li small {
+    color: #FCA028;
+    font-weight: bold;
+}
+
+.hotel_center li b {
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+}
+
+.hotel_center li cite {
+    color: #999;
+    font-style: normal;
+}
+
+.hotel_center li i {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 10px;
+    margin-right: 3px;
+    height: 13px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -158px -256px;
+}
+
+.hotel_jg {
+    float: right;
+}
+
+.hotel_jg dt {
+    color: #999;
+}
+
+.hotel_jg dt small {
+    color: #FD6720;
+}
+
+.hotel_jg dt span {
+    color: #FD6720;
+}
+
+.hotel_jg dd {
+    padding-top: 20px;
+}
+
+.hotel_btm {
+    border: 1px solid #E8E8E8;
+    border-bottom: 0;
+    margin-top: 7px;
+}
+
+.hotel_btm .screen {
+    border: 0;
+}
+
+.spot {
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    background: #F1F1F1;
+    margin-top: 2px;
+}
+
+.spot label {
+    position: relative;
+    width: 70px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    text-align: left;
+    cursor: pointer;
+}
+
+.spot label i {
+    width: 8px;
+    height: 12px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -133px -207px;
+    position: absolute;
+    left: 32px;
+    top: 12px;
+}
+
+.spot label.on i {
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -115px -207px;
+}
+
+.b {
+    display: inline-block;
+    height: 14px;
+    background: url(http://pic.ctrip.com/hotels121118/comment/small_c.png) no-repeat 0 -18px;
+    overflow: hidden;
+}
+
+.comment_block .comment_title .score {
+    float: left;
+    padding: 0 10px;
+}
+
+.score {
+    padding: 0 10px;
+}
+
+.score .n {
+    color: #fca028;
+    padding-right: 6px;
+    margin-top: -2px;
+}
+
+.score a {
+    color: #fca028;
+}
+
+.hotel_diamond01, .hotel_diamond02, .hotel_diamond03, .hotel_diamond04, .hotel_diamond05, .hotel_diamond06, .hotel_halfdiamond01, .hotel_halfdiamond02, .hotel_halfdiamond03, .hotel_halfdiamond04, .hotel_halfdiamond05, .hotel_halfdiamond06, .hotel_stars01, .hotel_stars02, .hotel_stars03, .hotel_stars04, .hotel_stars05 {
+    display: inline-block;
+    background: url(http://pic.c-ctrip.com/hotelcommon/icon_hotel9.png?151102.png) no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.hotel_stars01, .hotel_stars02, .hotel_stars03, .hotel_stars04, .hotel_stars05 {
+    height: 16px;
+    background-position: 0 -10px;
+}
+
+.hotel_stars01 {
+    width: 12px;
+}
+
+.hotel_stars02 {
+    width: 24px;
+}
+
+.hotel_stars03 {
+    width: 36px;
+}
+
+.hotel_stars04 {
+    width: 48px;
+}
+
+.hotel_stars05 {
+    width: 60px;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: #000;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+.hotel_diamond01, .hotel_halfdiamond01 {
+    width: 11px;
+}
+
+.hotel_diamond02, .hotel_halfdiamond02 {
+    width: 23px;
+}
+
+.hotel_diamond03, .hotel_halfdiamond03 {
+    width: 35px;
+}
+
+.hotel_diamond04, .hotel_halfdiamond04 {
+    width: 54px;
+}
+
+.hotel_diamond05, .hotel_halfdiamond05 {
+    width: 67px;
+}
+
+.hotel_diamond01, .hotel_diamond02, .hotel_diamond03, .hotel_diamond04, .hotel_diamond05, .hotel_diamond06 {
+    height: 16px;
+    background-position: 0 -10px;
+}
+
+.hotel_halfdiamond01 {
+    height: 16px;
+    background-position: -11px 4px;
+}
+
+.hotel_halfdiamond02 {
+    height: 16px;
+    background-position: -23px 4px;
+}
+
+.hotel_halfdiamond03 {
+    height: 16px;
+    background-position: -48px 4px;
+}
+
+.hotel_halfdiamond04 {
+    height: 16px;
+    background-position: -36px 4px;
+}
+
+.hotel_halfdiamond05 {
+    height: 16px;
+    background-position: -24px 4px;
+}
+
+.hotel_halfdiamond06 {
+    height: 16px;
+    background-position: 0 4px;
+}
+
+/*hotel End*/
+.load {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #999;
+    border: 1px solid #e0e0e0;
+    width: 66.4%;
+}
+
+.load img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.arr {
+    width: 33px;
+    height: 6px;
+    display: inline-block;
+    background-position: -160px -200px;
+    margin: 26px 10px 0 10px;
+    vertical-align: middle;
+    background-image: url("http://pic.c-ctrip.com/railway_v3/un_index.png?v=20150310");
+}
+
+/*btmNav Start*/
+.city_list {
+    border: 1px solid #e0e0e0;
+    height: 1%;
+    min-height: 20px;
+    padding-bottom: 1%;
+}
+
+.city_list:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.city_list dt {
+    height: 30px;
+    line-height: 30px;
+    background: #f7f8f9;
+    color: #333;
+    padding-left: 1.8%;
+}
+
+.city_list dd {
+    padding: 1% 0 0 1.8%;
+}
+
+.city_list dd a {
+    color: #666;
+}
+
+.city_list dd a:hover {
+    text-decoration: underline;
+}
+
+.city_list dd li {
+    float: left;
+    width: 14.4%;
+    height: 24px;
+    line-height: 24px;
+}
+
+.trainNav {
+    padding: 0 1.8%;
+    border: 1px solid #e0e0e0;
+}
+
+.trainNav dt {
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color: #666;
+}
+
+.trainNav dd {
+    border-top: 1px solid #e0e0e0;
+}
+
+.trainNav dd h4 {
+    line-height: 22px;
+    padding-top: 5px;
+}
+
+.trainNav dd ul {
+    height: 1%;
+    min-height: 20px;
+    padding: 5px 0;
+}
+
+.trainNav dd ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.trainNav dd ul li {
+    float: left;
+    line-height: 22px;
+    padding-right: 1%;
+}
+
+.trainNav dd ul li a {
+    color: #666;
+    font-size: 12px;
+}
+
+.trainNav dd ul li a:hover {
+    text-decoration: underline;
+}
+
+/*btmNav End*/
+
+/*云抢票*/
+.yun_stat span, .yun_lt h3 i, .yun_li li a.closed, .yun_seat li, .yun_info li, .yun_tips_seat li i, .yun_tips_checi_bd li span.checi i, .yun_fixed_btn i, .yun_lt.float_left i, .yun_lt.float_right i, .yun_tit_tips i, .yun_tit_tips dd em, .yun_pop_info li i, .yun_warn i {
+    background: url("http://pic.c-ctrip.com/railway_v2/icon_yun.png?v=201602512") no-repeat;
+}
+
+.yun_box {
+    width: 32.2%;
+    float: right;
+    margin-top: 34px;
+    position: relative
+}
+
+.yun_fixed_btn {
+    float: right;
+    width: 80px;
+    height: 28px;
+    background-color: #A1AABE;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 28px;
+    text-align: center
+}
+
+.yun_fixed_btn:hover {
+    text-decoration: none
+}
+
+.yun_fixed_btn i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+    background-position: 0 -145px;
+}
+
+.yun_fixed_btn.current i {
+    background-position: 0 -160px
+}
+
+.yun_tit {
+    position: relative;
+    height: 80px;
+    z-index: 5;
+    background: url("http://pic.c-ctrip.com/railway_v2/bar_yun.jpg") no-repeat top center;
+    cursor: pointer;
+}
+
+.yun_tit_tips {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 70px;
+    background: #fff;
+    border: 1px solid #BA1515;
+    border-radius: 8px;
+    padding: 20px;
+    display: none;
+    z-index: 2
+}
+
+.yun_tit:hover .yun_tit_tips {
+    display: block
+}
+
+.yun_tit_tips i {
+    position: absolute;
+    width: 22px;
+    height: 12px;
+    background-position: 0 -130px;
+    right: 10px;
+    top: -12px;
+}
+
+.yun_tit_tips dt {
+    font: 400 20px/1.5em "microsoft yaHei";
+    margin-left: 15px;
+}
+
+.yun_tit_tips dd {
+    margin: 5px 0 10px 15px;
+    line-height: 25px;
+    position: relative
+}
+
+.yun_tit_tips dd span {
+    color: #C41025
+}
+
+.yun_tit_tips dd em {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-position: 0 -100px;
+    left: -15px;
+    top: 10px;
+}
+
+.yun_b {
+    background: #fff;
+    z-index: 2
+}
+
+.yun_bd {
+    background: #F7F8F9;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.yun_bd.yun_stat {
+    text-align: center;
+    color: #666;
+    line-height: 40px;
+    padding: 1px 0
+}
+
+.yun_stat span {
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    background-position: 0 0;
+    margin: 0 -1px;
+    font: 400 16px/40px verdana;
+    color: #333
+}
+
+.yun_lt {
+    _height: 20px;
+    position: relative;
+}
+
+.yun_lt h3 {
+    border-left: 3px solid #D5D9E1;
+    line-height: 18px;
+    padding: 0 10px;
+    margin: 5px 0 8px;
+    font-size: 14px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    cursor: pointer;
+}
+
+.yun_lt h3 i, .yun_lt.float_left i, .yun_lt.float_right i {
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    background-position: 0 -80px;
+    vertical-align: middle;
+    margin: -2px 0 0 5px;
+    overflow: hidden
+}
+
+.yun_lt p {
+    text-align: right;
+    padding: 5px 10px 8px;
+    color: #666;
+    clear: both;
+    cursor: pointer;
+}
+
+.yun_lt p b, .yun_lt p span {
+    color: #E61A1A;
+    margin: 0 1px
+}
+
+.yun_li {
+    margin-left: 10px;
+    clear: both;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.yun_li li {
+    width: 30%;
+    float: left;
+    background: #fff;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 3.3% 5px 0;
+    _margin-right: 8px;
+    display: inline;
+    line-height: 30px;
+    text-indent: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.yun_li li a.closed {
+    width: 8px;
+    height: 8px;
+    float: right;
+    background-position: 0 -90px;
+    margin: 11px 8px 0 0;
+    display: inline;
+    overflow: hidden
+}
+
+.yun_seat {
+    padding: 5px 0 5px 16px;
+}
+
+.yun_seat li {
+    display: inline;
+    padding: 0 3.5% 0 18px;
+    line-height: 15px;
+    background-position: 0 -56px;
+    _padding-right: 5px;
+}
+
+.yun_seat li.current {
+    background-position: 0 -36px
+}
+
+.yun_lt.float_left, .yun_lt.float_right {
+    width: 48%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.yun_lt.float_left i, .yun_lt.float_right i {
+    float: right;
+    margin: 12px 10px 0 0;
+    display: inline
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.basefix {
+    *zoom: 1;
+}
+
+.basefix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+@keyframes yunWarn {
+    from {
+        height: 0;
+    }
+    to {
+        height: 30px;
+    }
+}
+
+@-moz-keyframes yunWarn {
+    from {
+        height: 0;
+    }
+    to {
+        height: 30px;
+    }
+}
+
+@-webkit-keyframes yunWarn {
+    from {
+        height: 0;
+    }
+    to {
+        height: 30px;
+    }
+}
+
+.yun_warn {
+    background: #FFEEEE;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    animation: yunWarn 1s;
+    -moz-animation: yunWarn 1s;
+    -webkit-animation: yunWarn 1s;
+}
+
+.yun_warn i {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -180px;
+    margin: -2px 5px 0 0
+}
+
+.yun_ct {
+    text-align: center
+}
+
+.yun_btn {
+    width: 200px;
+    height: 40px;
+    background: #E61A1A;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+.yun_btn:hover {
+    background: #c00
+}
+
+.yun_tips {
+    position: absolute;
+    border: 1px solid #E0E0E0;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    z-index: 2;
+    width: 98%;
+    left: 0;
+}
+
+.yun_tips_seat {
+    width: 120px;
+    margin: 25px 0 0 0;
+}
+
+.yun_tips_seat li, .yun_tips_station li {
+    line-height: 35px;
+    text-indent: 20px;
+    cursor: pointer;
+    height: 35px;
+}
+
+.yun_tips_seat li i, .yun_tips_checi_bd li span.checi i {
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 8px 0 0;
+    background-position: 0 -60px;
+}
+
+.yun_tips_seat li.current i, .yun_tips_checi_bd li.current span.checi i {
+    background-position: 0 -40px
+}
+
+.yun_tips_seat li:hover, .yun_tips_station li:hover {
+    background: #F7F8F9
+}
+
+.yun_tips.yun_tips_checi {
+    left: 0;
+    right: 0;
+    margin: 25px 0 0 0
+}
+
+.yun_tips_checi_tit {
+    margin: 0 10px;
+    border-bottom: 1px solid #E0E0E0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center
+}
+
+.yun_tips_checi_tit li {
+    width: 33.3%;
+    float: left;
+}
+
+.yun_tips_checi_bd {
+    max-height: 160px;
+    *height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.yun_tips_checi_bd li {
+    line-height: 35px;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden
+}
+
+.yun_tips_checi_bd li span {
+    float: left
+}
+
+.yun_tips_checi_bd li span.q1 {
+    width: 20%;
+}
+
+.yun_tips_checi_bd li span.q2 {
+    width: 50%;
+}
+
+.yun_tips_checi_bd li span.q3 {
+    width: 30%;
+}
+
+/*
+*/
+.yun_tips_checi_bd li span.checi {
+    text-align: left;
+}
+
+.yun_tips_checi_bd li:hover {
+    background: #F7F8F9;
+    cursor: pointer;
+}
+
+.yun_tips_station {
+    margin-top: 25px;
+}
+
+.float_left .yun_tips_station {
+    left: 0;
+}
+
+.float_right .yun_tips_station {
+    right: 0
+}
+
+.yun_pop {
+    width: 440px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+}
+
+.yun_pop_hd {
+    background: #F7F8F9;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px 12px;
+    min-height: 20px;
+    _height: 20px;
+}
+
+.yun_pop_hd h3 {
+    font: normal 18px/30px "microsoft yaHei";
+    text-align: center
+}
+
+.yun_pop .icon_close_l {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px;
+    font: normal 18px/28px Tahoma;
+    color: #ccc
+}
+
+.yun_pop .icon_close_l:hover {
+    text-decoration: none;
+    color: #3A83E9;
+}
+
+.yun_tag_green, .yun_tag_red {
+    float: right;
+    line-height: 20px;
+}
+
+.yun_tag_green span, .yun_tag_red span {
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 4px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 20px;
+    margin: -2px 0 0 3px
+}
+
+.yun_tag_red {
+    color: #E61A1A;
+}
+
+.yun_tag_red span {
+    background: #E61A1A;
+}
+
+.yun_tag_green {
+    color: #ADD05B;
+}
+
+.yun_tag_green span {
+    background: #ADD05B
+}
+
+.yun_pop_bd {
+    padding: 20px 25px;
+    overflow: hidden
+}
+
+.yun_pop_info li {
+    margin-bottom: 15px;
+    line-height: 20px;
+    padding-left: 10px;
+    position: relative
+}
+
+.yun_pop_info li span {
+    color: #C41025
+}
+
+.yun_pop_info li i {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+}
+
+.yun_pop_info li i.red {
+    background-position: 0 -100px;
+}
+
+.yun_pop_info li i.orage {
+    background-position: -20px -100px;
+}
+
+.yun_pop_info li i.green {
+    background-position: -10px -100px;
+}
+
+.yun_pop_btn {
+    width: 180px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.yun_pop_btn:hover {
+    text-decoration: none
+}
+
+.yun_pop_btn.orage {
+    background: #FDA128;
+    float: left;
+    border-radius: 3px
+}
+
+.yun_pop_btn.orage:hover {
+    background: #FF8500
+}
+
+.yun_pop_btn.red {
+    background: url("http://pic.c-ctrip.com/railway_v2/btn-chunyun.png?v=201602512") no-repeat;
+    float: right
+}
+
+.yun_pop_btn.red:hover {
+    background-position: 0 -40px
+}
+
+/*在线客服*/
+.shadow2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 12;
+    background: #000;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+.popBox {
+    width: 520px;
+    height: 240px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    z-index: 12;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.pop_top {
+    position: relative;
+}
+
+.pop_bk {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") 0px 0px;
+    top: 72px;
+    left: 30px;
+}
+
+.pop1 {
+    padding: 50px 0 0 168px;
+}
+
+.pop1 dt {
+    font-size: 20px;
+    color: #FF9A14;
+}
+
+.pop1 dd {
+    font-size: 15px;
+    color: #333;
+    padding-top: 20px;
+}
+
+.yellowBtn2 {
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #ffab00;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+
+.yellowBtn2:hover {
+    background: #F79700;
+    color: #fff;
+}
+
+.pop_close {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -294px -242px;
+    right: 26px;
+    top: 22px;
+    cursor: pointer;
+}
+
+.pop_bk2 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") -110px 0px;
+    top: 60px;
+    left: 30px;
+}
+
+.pop_bk3 {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    background: url("http://pic.c-ctrip.com/railway_v3/uu.gif");
+    top: 60px;
+    left: 30px;
+}
+
+/*.pop_bk3{position:absolute;width:105px;height:105px;background:url("http://pic.c-ctrip.com/railway_v3/uu.gif");top:60px;left:30px;background-size: cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://pic.c-ctrip.com/railway_v3/uu.gif',sizingMethod='scale');}*/
+.pop4 {
+    padding: 105px 0 0 180px;
+    font-size: 16px;
+}
+
+.pop2 {
+    padding: 52px 0 0 180px;
+}
+
+.pop2 dd, .pop3 dd {
+    text-indent: -74px;
+    padding: 5px 0 0 74px;
+}
+
+.pop2 dd span, .pop3 dd span {
+    color: #999;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.pop2 dd i {
+    font-style: normal;
+    color: #999;
+}
+
+.pop2 dd strong {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FF9A14;
+}
+
+.pop2 dd b, .pop3 dd b {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.pop3 {
+    padding: 75px 0 0 160px;
+}
+
+/*在线客服*/
+.railway_list div.price_pop2 {
+    position: absolute;
+    width: 260px;
+    border: 1px solid #67A1E1;
+    z-index: 9999;
+    height: auto;
+    background: #fff;
+    left: 0;
+    top: 30px;
+}
+
+.railway_list div.price_pop2 p {
+    padding: 6px 10px 6px 35px;
+    text-align: left;
+    line-height: 20px;
+    text-indent: -2em;
+}
+
+.railway_list div.price_pop2 p em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*二维码*/
+.ritImg1, .ritImg2 {
+    width: 32.2%;
+    float: right;
+    overflow: hidden;
+}
+
+.ritImg1 {
+    height: 95px;
+}
+
+.ritImg1 img {
+    width: 100%;
+    height: 95px;
+}
+
+.ritImg2 {
+    height: 190px;
+}
+
+.ritImg2 img {
+    width: 100%;
+    height: 190px;
+}
+
+/*load*/
+.searchresult_list_load {
+    margin: 100px auto;
+    padding-top: 100px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font: 14px 'Microsoft YaHei UI', 'Microsoft YaHei', SimSun, Tahoma, Verdana, Arial, sans-serif;
+    font-weight: bold;
+    color: #5F5F5F;
+    background: url(http://pic.c-ctrip.com/fltdomestic111027/ico_loading.gif?121211.gif) no-repeat center top;
+}
+
+.lisBox {
+    position: relative;
+}
+
+.mask_box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: 1;
+}
+
+.ico_loading {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background-image: url("http://pic.c-ctrip.com/common/loading_48.gif");
+}
+
+.pop-ft {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pop-ft .btn {
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    margin: 10px 10px 10px 0;
+    padding: 0 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+}
+
+.pop_v2 .btn {
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+    height: 24px;
+    margin: 10px 10px 10px 0;
+    padding: 0 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+}
+
+.btn_s, .btn_c {
+    display: block;
+    width: 138px;
+    height: 28px;
+    font: bold 14px/28px SimSun sans-serif;
+    text-align: center;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    border: 1px solid #0055AA;
+}
+
+.btn_s {
+    margin: 10px 0 20px;
+    box-shadow: 0 1px 0 rgba(95, 50, 0, 0.7);
+    background-color: #27C;
+}
+
+.btn_c {
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    border-color: #D1D1D1;
+}
+
+.btn_s:hover {
+    background-color: #29F;
+    border-color: #07D;
+}
+
+.btn_c:hover {
+    background-color: #06C;
+    border-color: #06C;
+    color: #FFF;
+}
+
+/* Pop Window Begin */
+.window_pop {
+    border: 1px solid #67A1E2;
+    background-color: #FFF;
+}
+
+.window_pop .window_pop_hd {
+    height: 30px;
+    padding: 0 10px;
+    font: bold 14px/30px Simsun;
+    background-color: #E9F5FF;
+}
+
+.window_pop .window_pop_bd {
+    padding: 20px;
+}
+
+.window_pop .window_pop_bd p {
+    text-align: center;
+}
+
+.btn_confirm {
+    display: block;
+    width: 71px;
+    height: 24px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 24px;
+    border: 1px solid #1256AA;
+    border-radius: 3px;
+    background-color: #27C;
+    color: #FFF;
+}
+
+.btn_confirm:hover {
+    text-decoration: none;
+    background-color: #29F;
+}
+
+/* Pop Window End */
+.pop_v2 {
+    position: relative;
+    width: 390px;
+    padding: 10px 15px 20px;
+    font-family: Tahoma, Simsun;
+    border: 9px solid #DCDCDC;
+    background-color: #FFF;
+}
+
+.pop_v2 .pop_hd_v2 {
+    height: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E1E1E1;
+    font: bold 14px/28px Tahoma, Simsun;
+}
+
+/*新增css*/
+#seo b {
+    color: gray;
+}
+
+/*火气联运*/
+.no_result_notice {
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px 0 40px;
+    font: 14px/40px Tahoma, Simsun, sans-serif;
+    background-color: #E0F0FF;
+}
+
+.no_result_notice b {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin: 8px 0 0 -30px;
+    margin-right: 10px;
+    background: url(http://pic.c-ctrip.com/railway_v2/icon_alert_big.gif) no-repeat;
+}
+
+.no_result_notice i {
+    margin: 0 3px;
+}
+
+.no_result_notice2 {
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #FFC051;
+    background-color: #FEFCD9;
+}
+
+.no_result_notice2 b {
+    margin-top: 6px;
+    background: url(http://pic.c-ctrip.com/railway_v2/icon_notice_big2.png) no-repeat;
+}
+
+.btTopic_box {
+    height: 32px;
+    line-height: 32px;
+    background: #F0F0F0;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.btTopic_box dd {
+    float: left;
+    color: #454545;
+}
+
+.btTopic_box dt {
+    float: right;
+    padding-right: 5px;
+    color: #2477E3;
+    cursor: pointer;
+    width: 10%;
+}
+
+.btTopic_box .btw1 {
+    width: 14%;
+}
+
+.btTopic_box .btw1 label {
+    padding-left: 12%;
+}
+
+.btTopic_box .btw2 {
+    width: 15%;
+}
+
+.btTopic_box .btw3 {
+    width: 19%;
+}
+
+.btTopic_box .btw4 {
+    width: 23%;
+}
+
+.btTopic_box .btw5 {
+    width: 17%;
+}
+
+.btListBox {
+    height: 198px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.trainBox, .busBox {
+    height: 56px;
+}
+
+.pt29 {
+    padding-top: 29px;
+}
+
+.pt36 {
+    padding-top: 36px;
+}
+
+.train_info, .bus_info {
+    float: left;
+    width: 15%;
+}
+
+.train_arrivalTime {
+    float: left;
+    width: 14%;
+}
+
+.train_city {
+    float: left;
+    width: 19%;
+}
+
+.train_runTimeLength {
+    float: left;
+    width: 15%;
+}
+
+.train_referencePrice, .bus_referencePrice {
+    float: left;
+    width: 25%;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.train_referencePrice {
+    position: relative;
+    z-index: 2;
+}
+
+.train_btn {
+    float: right;
+    padding-right: 3%;
+    z-index: 1
+}
+
+.train_btn a {
+    display: block;
+    width: 60px;
+    height: 23px;
+    line-height: 23px;
+    background: #FF9913;
+    color: #fff;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 0
+}
+
+.train_btn a.yyd {
+    background: #fff;
+    border: 58px;
+    height: 21px;
+    line-height: 21px;
+    color: #FF9913;
+    border: 1px solid #FF9913;
+}
+
+.train_btn a:hover {
+    background: #FFA200;
+}
+
+.train_btn a.yyd:hover {
+    color: #fff;
+}
+
+.train_btn span {
+    position: relative;
+}
+
+.train_info i, .train_info strong, .bus_info i, .bus_info strong {
+    float: left;
+}
+
+.trainBox .btm, .busBox .btm {
+    padding-top: 4px;
+}
+
+.train_info i {
+    width: 24px;
+    height: 24px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") no-repeat -60px -142px;
+    margin-left: 12%;
+}
+
+.bus_info i {
+    width: 24px;
+    height: 24px;
+    background: url("http://pic.c-ctrip.com/railway_v3/LstIcon.png?v=201602513") no-repeat -95px -142px;
+    margin-left: 12%;
+}
+
+.train_info strong, .bus_info strong {
+    padding-left: 7%;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.train_arrivalTime div {
+    height: 23px;
+    line-height: 23px;
+}
+
+.train_arrivalTime .top {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.train_arrivalTime .btm {
+    font-size: 13px;
+}
+
+.train_city div {
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.train_city div span {
+    float: left;
+    margin-top: -2px;
+    margin-left: 4px;
+}
+
+.train_runTimeLength span {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.train_referencePrice span, .bus_referencePrice span {
+    font-size: 13px;
+    float: left;
+    width: 27%;
+}
+
+.train_referencePrice strong, .bus_referencePrice strong {
+    font-size: 16px;
+    font-weight: normal;
+    float: left;
+    width: 37%;
+    color: #fa6701;
+}
+
+.train_referencePrice strong small, .bus_referencePrice strong small {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.train_referencePrice b, .bus_referencePrice b {
+    font-size: 13px;
+    font-weight: normal;
+    float: left;
+}
+
+.iconLft {
+    width: 2px;
+    height: 42px;
+    background: #D4D4D4;
+    position: absolute;
+    left: 25px;
+    top: 66px;
+}
+
+/*
+.timeBox{border:1px solid #CBCABD;height:20px;width:224px; position:absolute;left:50%;top:86px;margin-left:-110px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;}
+*/
+.timeBox {
+    border: 1px solid #CBCABD;
+    height: 20px;
+    width: 238px;
+    position: absolute;
+    left: 47%;
+    top: 86px;
+    margin-left: -110px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.timeBox:before,
+.timeBox:after {
+    width: 40px;
+    content: "";
+    height: 2px;
+    border-bottom: 1px dashed #ccc;
+    position: absolute;
+    top: 8px;
+}
+
+/*
+.timeBox:before{left:-51px;}
+.timeBox:after{left:227px;}
+*/
+.timeBox:before {
+    left: -49px;
+}
+
+.timeBox:after {
+    left: 243px;
+}
+
+.timeBox li {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 0 0 5px;
+}
+
+.timeBox li span {
+    color: #000;
+}
+
+.more_zuoxi {
+    position: absolute;
+    left: 0;
+    top: 27px;
+    color: #2e7de4;
+    width: 60px;
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.more_list {
+    position: absolute;
+    width: 150px;
+    background: #fff;
+    border: 3px solid #ccc;
+    left: 53px;
+    top: 31px;
+    padding-top: 6px;
+    z-index: 1
+}
+
+.more_list li {
+    padding: 0 0 3px 10px;
+    height: 27px;
+}
+
+.more_list li.disabled, .more_list li.disabled small, .more_list li.disabled big {
+    color: #888;
+}
+
+.more_list li.disabled label {
+    cursor: default;
+}
+
+.more_list li label {
+    cursor: pointer;
+}
+
+.more_list li input {
+    float: left;
+    margin-top: 7px;
+    *margin-top: 1px
+}
+
+.more_list li i {
+    padding-left: 5px; /*letter-spacing:8px;*/
+}
+
+.more_list li small {
+    padding-left: 13px;
+    color: #fa6701;
+}
+
+.more_list li big {
+    color: #fa6701;
+}
+
+.train_arrivalTime .top i {
+    border-bottom: 1px dashed #3480e2;
+    color: #3480e2;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.train_arrivalTime .btm i {
+    border-bottom: 1px dashed #3480e2;
+    color: #3480e2;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.icon_tip {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    background: url(http://pic.c-ctrip.com/railway_v2/un_icon_book.png) no-repeat;
+    background-position: 0 -160px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    left: 65px;
+    top: -20px;
+    *top: 3px;
+    top: 3 px\9 \0;
+}
+
+.connections-list {
+    padding: 3% 2%;
+    height: 1%;
+    min-height: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.connections-list:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.cl1, .cl2, .cl1 dt strong, .cl1 dt i, .cl2 small, .cl2 strong, .cl2 em {
+    float: left;
+}
+
+.cl3 {
+    float: right;
+}
+
+.cl1 {
+    padding-left: 15%;
+    height: 56px;
+    background: url("http://pic.c-ctrip.com/train/railway_v2/connections.png") no-repeat 14px 0;
+}
+
+.cl1 dt {
+    clear: both;
+    width: 100%;
+    height: 40px;
+}
+
+.cl1 dt strong {
+    float: left;
+    font-size: 16px;
+    font-family: SimHei;
+}
+
+.cl1 dt i {
+    width: 146px;
+    height: 24px;
+    background: url("http://pic.c-ctrip.com/train/railway_v2/connections.png") no-repeat center -66px;
+}
+
+.cl1 dd {
+    font-size: 12px;
+    color: #666;
+}
+
+.cl2 {
+    color: #fa6700;
+    line-height: 22px;
+    padding-left: 20%;
+}
+
+.cl2 small {
+    font-size: 12px;
+}
+
+.cl2 strong {
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.cl2 em {
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+.cl2 .hour {
+    color: #BCBCBC;
+    margin-top: 16px;
+    line-height: 18px;
+    float: left;
+    width: 100%;
+    *margin-top: 35px;
+    *margin-left: -60px;
+}
+
+.calendar-box {
+    padding-left: 34%;
+    height: 93px;
+    border: 1px solid #F0F0F0;
+    position: relative;
+}
+
+.calendar-icon {
+    width: 82px;
+    height: 81px;
+    position: absolute;
+    left: 5%;
+    top: 3px;
+    background: url("http://pic.c-ctrip.com/train/railway_v2/connections.png") 0 -100px no-repeat;
+}
+
+.calendar-txt {
+    color: #333;
+    font-family: SimHei;
+}
+
+.calendar-txt dt {
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 21px;
+}
+
+.calendar-txt dd {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.calendar-txt dd span {
+    padding-left: 10px;
+}
+
+.set-box {
+    height: 22px;
+    margin-top: 18px;
+    line-height: 22px;
+}
+
+.set-box strong, .set-box span, .set-box em, .set-box i {
+    float: left;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.set-box strong {
+    font-size: 14px;
+    padding-left: 14px;
+    padding-right: 12px;
+}
+
+.set-box span {
+    width: 18px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    background: #797D83;
+    font-family: arial;
+    color: #fff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: 2px;
+}
+
+.set-box em {
+    padding: 0 4px 0 6px;
+    font-style: normal;
+    font-size: 14px;
+    color: #797D83;
+}
+
+.set-box i {
+    font-style: normal;
+    padding-left: 2%;
+    color: #e91405;
+    font-size: 12px;
+    float: right;
+    padding: 0 14px 0 0;
+}
+
+.historical {
+    margin-top: 18px;
+    border: 1px solid #E0E0E0;
+    height: 86px;
+    padding: 14px;
+    overflow: hidden;
+}
+
+.historical-left {
+    float: left;
+    padding-right: 8%;
+}
+
+.historical-left dt {
+    font-size: 14px;
+    color: #333;
+}
+
+.historical-left dd {
+    font-size: 14px;
+    color: #999;
+    padding-top: 9px;
+}
+
+.historical-left dd big {
+    font-size: 18px;
+    font-family: arial;
+    padding-right: 10px;
+}
+
+.historical-right {
+    float: left;
+    padding-left: 8%;
+    border-left: 1px dotted #e0e0e0;
+}
+
+.historical-right dt {
+    font-size: 16px;
+    font-family: arial;
+}
+
+.historical-right dd {
+    font-size: 14px;
+    color: #999;
+    padding-top: 9px;
+}
+
+.historical-right dd b {
+    font-size: 14px;
+    font-weight: normal;
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #333;
+}
+
+.historical-right dd span i {
+    vertical-align: middle;
+    margin: 0 10px;
+    margin-top: -6px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 32px;
+    height: 5px;
+    background: url("http://pic.c-ctrip.com/train/railway_v2/connections.png") 0 -201px no-repeat;
+}
+
+.show-box {
+    background: #fff; /* margin-top:8px; */
+    padding: 0 5px;
+}
+
+.show-box .top-title {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.show-box .top-title span {
+    float: left;
+    color: #999;
+}
+
+.show-box .top-title cite {
+    float: right;
+    font-style: normal;
+    color: #999;
+}
+
+.show-box .top-title big {
+    font-size: 20px;
+    float: left;
+    font-family: arial;
+    color: red;
+}
+
+.show-box .top-title em {
+    font-style: normal;
+    float: left;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.show-box dd {
+    font-size: 14px;
+    height: 65px;
+    line-height: 30px;
+    width: 100%;
+    float: LEFT;
+}
+
+.show-box dd span {
+    float: left;
+}
+
+.show-box dd cite {
+    font-style: normal;
+    font-size: 16px;
+}
+
+.show-box dd cite em {
+    font-style: normal;
+    padding-left: 5px;
+}
+
+.erweima {
+    height: 94px;
+    background: url("http://pic.c-ctrip.com/train/railway_v3/banner3.png") no-repeat;
+    position: relative; /* float:right; *//* width:32%; */
+}
+
+.erweima img {
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    left: 2%;
+    top: 7px;
+}
+
+/*
+.txt-sucrate{margin-top:-20px;font-size:14px;color:#f60;}
+.txt-sucrate.mt0{margin-top:0;}*/
+.txt-sucrate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    color: #FF6913;
+    line-height: 18px;
+    padding: 0 5px;
+    background: #FFF1E5
+}
+
+.price-tab {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.price-tab td {
+    border-right: 1px solid #ECECEC
+}
+
+.price-tab td:last-child {
+    border-right: 0;
+}
+
+.price-tab p {
+    text-align: center;
+    padding: 0;
+    color: #FF6913;
+    font-size: 15px;
+}

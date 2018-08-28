@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head id="ctl00_head1">
+    <title>
+        三创抢票了解一下
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/css/cityselect.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/searchaspx.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-reset.css">
+    <script type="text/javascript" src="/static/js/cityselect.js"></script>
+    <script type="text/javascript" src="/static/js/laydate.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style type="text/css">
+        .tuna_jmpinfo form, .tuna_jmpinfo h1, .tuna_jmpinfo h2, .tuna_jmpinfo h3, .tuna_jmpinfo h4, .tuna_jmpinfo ul, .tuna_ jmpinfo ol, .tuna_jmpinfo li, .tuna_jmpinfo dl, .tuna_jmpinfo dd, .tuna_jmpinfo dt, .tuna_jmpinfo p, .tuna_jmpinfo hr, .tuna_jmpinfo input {
+            margin: 0;
+            padding: 0
+        }
+
+        .tuna_jmpinfo {
+            margin: 20px;
+            color: #333;
+            font: 12px/2 Arial, Tahoma, simsun;
+            -webkit-text-size-adjust: none;
+        }
+
+        .tuna_jmpinfo ul, .tuna_jmpinfo li {
+            list-style: none;
+        }
+
+        .tuna_jmpinfo a {
+            color: #00c;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .tuna_jmpinfo a:hover {
+            color: #f00;
+            text-decoration: underline;
+        }
+
+        .tuna_jmpinfo .font16 {
+            font-size: 16px;
+        }
+
+        .tuna_jmpinfo .jmp_hd {
+            height: 30px;
+            padding-left: 10px;
+            background: url(//pic.c-ctrip.com/common/un_base_btn.png) repeat-x 0 -390px;
+            font-size: 12px;
+            line-height: 30px;
+            color: #333;
+        }
+
+        .tuna_jmpinfo .jmp_hd h3 {
+            font-size: 12px;
+        }
+
+        .tuna_jmpinfo .jmp_bd {
+            padding: 8px 10px;
+        }
+
+        .tuna_jmpinfo .jmp_title, .jmp_table {
+            border: 1px solid #67a1e2;
+            background: #fff;
+        }
+
+        .tuna_jmpinfo .jmp_alert {
+            border: 1px solid #ffb533;
+            background: #fff5d1;
+        }
+
+        .tuna_jmpinfo .jmp_text {
+            border: 1px solid #67a1e2;
+            background: #e8f4ff;
+        }
+
+        .tuna_jmpinfo .base_jmp b {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-image: url(//pic.c-ctrip.com/common/un_jmp_tri.png);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .tuna_jmpinfo .base_jmp_t {
+            margin-top: 8px;
+        }
+
+        .tuna_jmpinfo .base_jmp_r {
+            margin-right: 8px;
+        }
+
+        .tuna_jmpinfo .base_jmp_b {
+            margin-bottom: 7px;
+        }
+
+        .tuna_jmpinfo .base_jmp_l {
+            margin-left: 8px;
+        }
+
+        .tuna_jmpinfo .base_jmp_t b {
+            margin-top: -7px;
+        }
+
+        .tuna_jmpinfo .base_jmp_r b {
+            margin-top: 10px;
+            right: 0;
+        }
+
+        .tuna_jmpinfo .base_jmp_b b {
+            bottom: -8px;
+        }
+
+        .tuna_jmpinfo .base_jmp_l b {
+            margin-top: 10px;
+            left: 9px;
+        }
+
+        .tuna_jmpinfo .jmp_title .tri_t, .tuna_jmpinfo .jmp_text .tri_t {
+            background-position: 1px 0;
+        }
+
+        .tuna_jmpinfo .jmp_title .tri_r, .jmp_text .tri_r {
+            background-position: 0 -16px;
+        }
+
+        .tuna_jmpinfo .jmp_title .tri_b {
+            background-position: -32px -32px;
+        }
+
+        .tuna_jmpinfo .jmp_title .tri_l, .jmp_text .tri_l {
+            background-position: 0 -48px;
+        }
+
+        .tuna_jmpinfo .jmp_text .tri_b {
+            background-position: 0 -32px;
+        }
+
+        .tuna_jmpinfo .jmp_alert .tri_t {
+            background-position: -15px 0;
+        }
+
+        .tuna_jmpinfo .jmp_alert .tri_r {
+            background-position: -16px -16px;
+        }
+
+        .tuna_jmpinfo .jmp_alert .tri_b {
+            background-position: -16px -32px;
+        }
+
+        .tuna_jmpinfo .jmp_alert .tri_l {
+            background-position: -16px -48px;
+        }
+
+        .tuna_jmpinfo .jmp_table .tri_t {
+            background-position: -31px 0;
+        }
+
+        .tuna_jmpinfo .jmp_table .tri_r {
+            background-position: -32px -16px;
+        }
+
+        .tuna_jmpinfo .jmp_table .tri_b {
+            background-position: -32px -32px;
+        }
+
+        .tuna_jmpinfo .jmp_table .tri_l {
+            background-position: -32px -48px;
+        }
+
+        .tuna_jmpinfo .jmp_tab_list {
+            position: relative;
+            padding: 10px 10px 0;
+            overflow: hidden;
+            z-index: 99;
+            zoom: 1;
+        }
+
+        .tuna_jmpinfo .jmp_tab_list li {
+            float: left;
+        }
+
+        .tuna_jmpinfo .jmp_tab_list li.current {
+            border: 1px solid #67A1E2;
+            border-bottom: 1px solid #E8F4FF;
+        }
+
+        .tuna_jmpinfo .jmp_tab_list li a {
+            display: inline-block;
+            padding: 4px 10px 3px;
+        }
+
+        .tuna_jmpinfo .jmp_tab_list li.current a {
+            border-top: 1px solid #fff;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .tuna_jmpinfo .jmp_tab_bd {
+            margin: -1px 10px 10px;
+            padding-top: 10px;
+            border-top: 1px solid #67A1E2;
+            background: #E8F4FF;
+            zoom: 1;
+        }
+
+        .data_form {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #fff;
+            *border-width: 1px;
+            font: normal 12px Verdana, Simsun;
+        }
+
+        .data_form th {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .data_form td {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+        }
+
+        .tuna_jmpinfo .active {
+            display: block;
+        }
+
+        .hotel_everyday_list th {
+            background: #F1F1F1;
+            white-space: nowrap;
+            height: 25px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .hotel_everyday_list td {
+            width: 60px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            vertical-align: top;
+            line-height: 20px;
+            background: url(//pic.c-ctrip.com/mystery_hotels/bg_hotel_breakfast.gif) repeat-x 0 39px;
+        }
+
+        .hotel_everyday_price {
+            color: #E56700;
+            display: block;
+        }
+
+        .hotel_everyday_list .hotel_everyday_price em {
+            color: green;
+            font-style: normal;
+        }
+
+        .hotel_everyday_list span em {
+            color: gray;
+            font-style: normal;
+        }
+
+        .hotel_everyday_nobreakfast {
+            color: #b4b4b4;
+        }
+
+        #ti {
+            font-size: 20px;
+            color: #1b9dec;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body id="mainbody">
+<div id="base_bd">
+    <div id="ti">
+        <h1>火车票查询</h1>
+    </div>
+    <form name="aspnetForm" method="post" action="/select/" id="aspnetForm">
+        {% csrf_token %}
+
+
+        <style type="text/css">
+            /* 重置cQuery浮层样式 */
+            .jmp_bd {
+                line-height: 1.5;
+                background-color: #FFF;
+            }
+
+            .tuna_jmpinfo .base_jmp_t b {
+                display: none;
+            }
+
+            .t_jump_content {
+                margin-left: 15px;
+                background-color: #FFF;
+            }
+
+            .t_jump_content, .t_jump_content li {
+                list-style: decimal;
+            }
+        </style>
+
+
+        <!--==搜索框==-->
+        <div class="base_bd">
+
+            <div class="search_box">
+                <ul>
+                    <li class="search_region_lft">
+                        <input class="txt100" placeholder="请输入出发城市" type="text" name="start_station" id="notice01"
+                               autocomplete="on">
+                    </li>
+                    <li class="search_exchanged">
+                        <a class="exchangedBtn" href="###" id="change">换</a>
+                    </li>
+                    <li class="search_region_rit" bus="true">
+                        <input class="txt100" placeholder="请输入到达城市" type="text" id="notice08" name="end_station"
+                               autocomplete="on">
+                    </li>
+                    <li class="search_region_rit" style="display: none" bus="false">
+                        <input class="txt100" value="长沙" type="text" id="notice02" autocomplete="on">
+                    </li>
+                    <li class="search_date_lft">
+                        出发日期
+                    </li>
+                    <li class="search_dateInput_lft">
+                        <input class="txt100" readonly="readonly" placeholder="输入出发日期" name="start_time" type="text"
+                               id="start">
+                    </li>
+                    <li class="search_date_rit returndate" style="color: gray;">
+                        返回日期
+                    </li>
+                    <li class="search_dateInput_rit returndate" style="color: gray;">
+                        <input class="txt100" readonly="readonly" placeholder="输入返回日期" name="end_time" type="text"
+                               id="end" style="color: gray;">
+                    </li>
+                    <li class="search_date_rit zhuan" style="display: none">
+                        中转城市
+                    </li>
+                    <li class="search_dateInput_rit zhuan" style="display: none">
+                        <input class="txt100" value="" type="text" id="notice03" autocomplete="on">
+                    </li>
+                    <li class="search_Btn">
+                        <input class="blueBtn" value="搜索" type="submit" id="searchbuttonlist">
+                    </li>
+                </ul>
+            </div>
+            <input type="hidden" id="from" value="anyang">
+            <input type="hidden" id="to" value="changsha">
+            <input type="hidden" id="tos" value="changsha">
+            <input type="hidden" id="hub" value="">
+            <input type="text" id="validates" value="" style="display: none" autocomplete="on">
+            <input type="hidden" id="validatesto" value="">
+        </div>
+        <!--==右边栏==-->
+
+
+        <div class="base_bd">
+
+            <!--==车次==-->
+            <div class="trainList_box">
+
+
+                <div class="search_cate" style="height:76px;" id="resultFilters01">
+                    <dl class="search_cate_list">
+                        <dt>车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：</dt>
+                        <dd><label><input type="checkbox" ubtm="车型|高铁"><span>G/C高铁</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="车型|动车"><span>D动车</span></label></dd>
+                        <dd class="current"><label><input type="checkbox" ubtm="车型|普通"><span>普通</span></label></dd>
+                    </dl>
+                    <dl class="search_cate_list">
+                        <dt>坐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;席：</dt>
+                        <dd><label><input type="checkbox" ubtm="坐席|商务座"><span>商务座</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|一等座"><span>一等座</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|二等座"><span>二等座</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|高级软卧"><span>高级软卧</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|软卧"><span>软卧</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|硬卧"><span>硬卧</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|硬座"><span>硬座</span></label></dd>
+                        <dd><label><input type="checkbox" ubtm="坐席|动卧"><span>动卧</span></label></dd>
+                    </dl>
+                    <dl class="search_cate_list">
+                        <dt>出发时段：</dt>
+                        <dd class="no_limit"><label class="selected">不限</label></dd>
+                        <dd class=""><label><i class="checkbox" ubtm="出发时段|0点-6点"></i><span>0点-6点</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="出发时段|6点-12点"></i><span>6点-12点</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="出发时段|12点-18点"></i><span>12点-18点</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="出发时段|18点-24点"></i><span>18点-24点</span></label></dd>
+                    </dl>
+
+
+                    <dl class="search_cate_list">
+                        <dt>到达时段：</dt>
+                        <dd class="no_limit"><label class="selected">不限</label></dd>
+                        <dd class=""><label><i class="checkbox" ubtm="到达时段|0点-6点"></i><span>0点-6点</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="到达时段|6点-12点"></i><span>6点-12点</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="到达时段|12点-18点"></i><span>12点-18点</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="到达时段|18点-24点"></i><span>18点-24点</span></label></dd>
+                    </dl>
+
+                    <dl class="search_cate_list" id="departurelist">
+                        <dt>出发车站：</dt>
+                        <dd class="no_limit"><label class="selected">不限</label></dd>
+                        <dd><label><i class="checkbox" ubtm="出发车站|出发车站"></i><span>安阳</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="出发车站|出发车站"></i><span>安阳东</span></label></dd>
+                    </dl>
+
+                    <dl class="search_cate_list" id="arrivelist">
+                        <dt>到达车站：</dt>
+                        <dd class="no_limit"><label class="selected">不限</label></dd>
+                        <dd><label><i class="checkbox" ubtm="到达车站|到达车站"></i><span>长沙</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="到达车站|到达车站"></i><span>长沙南</span></label></dd>
+                    </dl>
+
+                    <dl class="search_cate_list">
+                        <dt>始发过路：</dt>
+                        <dd class="no_limit"><label class="selected">不限</label></dd>
+                        <dd class=""><label><i class="checkbox" ubtm="始发过路|始发"></i><span>始发</span></label></dd>
+                        <dd><label><i class="checkbox" ubtm="始发过路|过路"></i><span>过路</span></label></dd>
+                    </dl>
+
+                </div>
+
+                <div id="listheader" style="">
+                    <dl class="topic_box">
+                        <dd class="w1"><label style="cursor: default">车次信息</label></dd>
+                        <dd class="w2"><label class="icon_blue_down sort" order="1,default,false">出发站/时间<b
+                                class="on"></b></label></dd>
+                        <dd class="w4"><label class="icon_gray_down sort" order="3,default,false">运行时长<b class="on"></b></label>
+                        </dd>
+                        <dd class="w3"><label style="cursor: default">到达站/时间</label></dd>
+                        <dd class="w5"><label class="icon_gray_down sort" order="8,default,false">坐席&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考价<b
+                                class="on"></b></label></dd>
+                        <dd class="w6"><label><input type="checkbox" id="filter_train_piao">只显示有票车次</label></dd>
+
+                    </dl>
+
+                </div>
+                <div id="tranferTop"></div>
+
+
+                <div class="lisBox">
+
+                    <div class="searchresult_list_load" style="display: none;" id="loading">请稍等，正在为您实时查询。</div>
+                    <div id="searchlsit" class="">
+                        {% for mes in mes_list %}
+                            <div class="tbody" id="{{ mes.train_num }}"
+                                 filter="K 11:31 02:24 893 true {{ mes.from_station }} {{ mes.to_station }} false 138.5 896 True">
+                                <div class="railway_list">
+                                    <div class="w1">
+                                        <div class="fil_num">
+                                            <strong>{{ mes.train_num }}</strong>
+                                        </div>
+                                        <div hidden class="train_no">
+                                            <span class="station_no">{{ mes.train_no }}</span>
+                                        </div>
+                                        <div style="">
+                                            <a class="stopstation" style="cursor:pointer">
+                                                经停站
+                                                <i class="icon_hide"></i>
+                                            </a>
+                                        </div>
+                                        <div hidden class="depart_time">
+                                            <span class="depart_time">{{ mes.depart_time }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="w2">
+                                        <div>
+                                            <strong>{{ mes.start_time }}</strong>
+                                        </div>
+                                        {% if mes.is_first == 'yes' %}
+                                            <div>
+                                                <i class="guo_icon">始</i>
+                                                <span>{{ mes.from_station }}</span>
+                                            </div>
+                                        {% else %}
+                                            <div>
+                                                <i class="guo_icon">过</i>
+                                                <span>{{ mes.from_station }}</span>
+                                            </div>
+                                        {% endif %}
+
+                                    </div>
+
+                                    <div class="w4">
+                                        <div class="haoshi">
+                                            <strong>{{ mes.times }}</strong><i class="icon-sfz"></i>
+                                        </div>
+                                        <div class="line"><i class="shi guo"></i><i class="zhong"></i></div>
+                                    </div>
+
+                                    <div class="w3">
+                                        <div>
+                                            <label>
+                                                <strong>{{ mes.end_time }}</strong>
+                                                <i>
+                                                    <small class="base_txtdiv" data-role="jmp" data-params="{
+									options:
+										{
+											 type: &quot;jmp_text&quot;,
+											 template:&quot;#jmp_textTip&quot;,
+											 classNames:{
+												boxType:&quot;jmp_text&quot;
+											 },
+											 &quot;content&quot;:{
+												&quot;txt&quot;:&quot;到达时间为第二天： 2018-08-09 02:24:00&quot;
+											}
+									}
+								}">
+                                                    </small>
+                                                </i>
+                                            </label>
+                                        </div>
+                                        {% if mes.is_end == 'yes' %}
+                                            <div>
+                                                <i class="guo_icon">终</i>
+                                                <span>{{ mes.to_station }}</span>
+                                            </div>
+                                        {% else %}
+                                            <div>
+                                                <i class="guo_icon">过</i>
+                                                <span>{{ mes.to_station }}</span>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    {% if mes.train_num|slice:'1' == 'G' %}
+                                    <div class="w5" id="{{ mes.train_no }}">
+                                        <div hidden class="location_station_no"><span class="from_station_no">{{ mes.from_station_no }}</span></div>
+                                        <div hidden class="location_to_no"><span class="to_station_no">{{ mes.to_station_no }}</span></div>
+                                        <div hidden class="seat_type"><span class="to_station_no">{{ mes.seat_type }}</span></div>
+                                        <div class="SK599-201">
+                                            <span><a style="cursor:pointer">二等座</a></span>
+                                            <b></b>
+                                            {% if mes.seconde_class == '有' or mes.seconde_class == '无' %}
+                                            <strong class="TxtRed">
+                                                  {{ mes.seconde_class }}
+                                            </strong>
+                                            {% else %}
+                                                <strong class="TxtRed">
+                                                 余<em>{{ mes.seconde_class }}</em>张
+                                            </strong>
+                                            {% endif %}
+                                        </div>
+                                        <div class="SK599-224">
+                                            <span><a style="cursor:pointer">一等座</a></span>
+                                            <b></b>
+                                            {% if mes.first_class == '有' or mes.first_class == '无' %}
+                                            <strong class="TxtRed">
+                                              {{ mes.first_class }}
+                                            </strong>
+                                            {% else %}
+                                               <strong class="TxtRed">
+                                                余<em>{{ mes.first_class }}</em>张
+                                            </strong>
+                                            {% endif %}
+                                        </div>
+                                        <div class="SK599-225">
+                                            <span>
+					                            <a style="cursor:pointer">商务座</a>
+				                            </span>
+                                            <b></b>
+                                            {% if mes.business_class == '有' or mes.business_class == '无' %}
+                                            <strong class="TxtRed">
+                                              {{ mes.business_class }}
+                                            </strong>
+                                            {% else %}
+                                             <strong class="TxtRed">
+                                                余<em>{{ mes.business_class }}</em>张
+                                            </strong>
+                                            {% endif %}
+                                        </div>
+                                        <div class="k599"><a class="price" style="cursor:pointer">点击查看票价</a></div>
+                                    </div>
+                                    {% elif mes.train_num|slice:'1' == 'D' %}
+                                    <div class="w5" id="{{ mes.train_no }}">
+                                        <div hidden class="location_station_no"><span class="from_station_no">{{ mes.from_station_no }}</span></div>
+                                        <div hidden class="location_to_no"><span class="to_station_no">{{ mes.to_station_no }}</span></div>
+                                        <div hidden class="seat_type"><span class="to_station_no">{{ mes.seat_type }}</span></div>
+                                        <div class="SK599-201">
+                                            <span><a style="cursor:pointer" class="price">二等座</a></span>
+                                            <b></b>
+                                            {% if mes.seconde_class == '有' or mes.seconde_class == '无' %}
+                                            <strong class="">{{ mes.seconde_class }}</strong>
+                                            {% else %}
+                                              <strong class="">余{{ mes.seconde_class }}张</strong>
+                                            {% endif %}
+                                        </div>
+                                        <div class="SK599-224">
+                                            <span><a style="cursor:pointer">软　卧</a></span>
+                                            <b></b>
+                                            <strong class="TxtRed">
+                                                余<em>0</em>张
+                                            </strong>
+                                        </div>
+                                        <div class="SK599-225">
+				                       <span>
+					                       <a style="cursor:pointer">无　座</a>
+				                       </span>
+                                           <b></b>
+                                            <strong class="TxtRed">
+                                                余<em>0</em>张
+                                            </strong>
+                                        </div>
+                                        <div class="k599"><a class="price" style="cursor:pointer">点击查看票价</a></div>
+                                    </div>
+                                    {% else %}
+                                    <div class="w5" id="{{ mes.train_no }}">
+                                        <div hidden class="location_station_no"><span class="from_station_no">{{ mes.from_station_no }}</span></div>
+                                        <div hidden class="location_to_no"><span class="to_station_no">{{ mes.to_station_no }}</span></div>
+                                        <div hidden class="seat_type"><span class="to_station_no">{{ mes.seat_type }}</span></div>
+                                        <div class="SK599-201">
+                                            <span><a style="cursor:pointer" class="price">硬　座</a></span>
+                                            <b></b>
+                                            <strong class="">余99张</strong>
+                                        </div>
+                                        <div class="SK599-224">
+                                            <span><a style="cursor:pointer">硬　卧</a></span>
+                                            <b></b>
+                                            <strong class="TxtRed">
+                                                余<em>0</em>张
+                                            </strong>
+                                        </div>
+                                        <div class="SK599-225">
+				                       <span>
+					                       <a style="cursor:pointer">软　卧</a>
+				                       </span>
+                                           <b></b>
+                                            <strong class="TxtRed">
+                                                余<em>0</em>张
+                                            </strong>
+                                        </div>
+                                        <div class="SK599-226">
+                                            <span><a style="cursor: pointer">无　座</a></span>
+                                            <b></b>
+                                            <strong class="">余99张</strong>
+                                        </div>
+                                         <div class="k599"><a class="price" style="cursor:pointer">点击查看票价</a></div>
+                                    </div>
+                                    {% endif %}
+                                    <div class="w6">
+                                        <div>
+                                            <a class="qp_btn1" id="SK599-201" href="#myModal-1" data-toggle="modal">
+                                                抢票
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="qp_btn1" id="SK599-224" href="#myModal-1" data-toggle="modal">
+                                                抢票
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="qp_btn1" id="SK599-225" href="#myModal-1" data-toggle="modal">
+                                                抢票
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="txt-sucrate"></div>
+
+                                </div>
+                                <div class="station_box" id="station_box" style="display: none">
+                                    <ul class="station_top">
+                                        <li class="st1">车站名</li>
+                                        <li class="st2">到达时间</li>
+                                        <li class="st3">发车时间</li>
+                                        <li class="st4">停留时间</li>
+                                    </ul>
+                                    <div class="station">
+                                        <em class="control"></em>
+
+                                    </div>
+                                </div>
+                                <div class="transfer" style="display:none">
+
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% include 'crontribute_modal.html' %}
+<script type="text/javascript">
+    var test = new Vcity.CitySelector({input: 'notice01'});
+    var test = new Vcity.CitySelector({input: 'notice08'});
+    $(document).ready(function () {
+        $('#change').click(function () {
+            var a = $("#notice01").val();
+            var b = $("#notice08").val();
+            $("#notice01").val("");
+            $("#notice08").val("");
+            $("#notice01").val(b);
+            $("#notice08").val(a)
+
+
+        })
+    });
+
+    !function () {
+        laydate.skin('molv');
+        laydate({elem: 'start'});
+    }();
+
+    var start = {
+        elem: '#start',
+        format: 'YYYY-MM-DD',
+        min: laydate().now(),
+        max: laydate().now(+30),
+        istime: true,
+        istoday: false,
+        choose: function (datas) {
+            end.min = datas;
+            end.start = datas
+        }
+    };
+
+    var end = {
+        elem: '#end',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(),
+        max: laydate().now(+30),
+        istime: true,
+        istoday: false,
+        choose: function (datas) {
+            start.max = datas;
+        }
+    };
+    laydate(start);
+    laydate(end);
+
+    $(document).ready(function () {
+        var state = 0;
+        $('.stopstation').click(function () {
+            if (state == 0) {
+                $(this).parents('.railway_list').next().css("display", "");
+                state = 1;
+            } else {
+                $(this).parents('.railway_list').next().css("display", "none");
+                $('.control').empty();
+                state = 0;
+            }
+        })
+    });
+
+    $(document).ready(function () {
+        var state = 0;
+        $(".stopstation").click(function () {
+            if (state == 0) {
+                $.ajax({
+                    url: '/stopstation/',
+                    type: 'GET',
+                    async: true,
+                    data: {
+                        train_no: $(this).parent().prev().find("span").text(),
+                        from_station: $(this).parents(".w1").next().find("span").text(),
+                        to_station: $(this).parents(".w1").nextAll().filter(".w3").find("span").text(),
+                        depart_time: $(this).parent().next().find("span").text(),
+                        train_num: $(this).parent().prevAll(".fil_num").find("strong").text()
+                    },
+                    datatype: 'json',
+                    success: function (data) {
+                        var json = eval('(' + data + ')');
+                        $.each(json, function (i, val) {
+                            var id = val.tran_num;
+                            $("#" + id).children(".station_box").children(".station").find("em").append('<dl class="station_lst">' + '<dt class="d1"><i>' + val.station_no + '</i></dt>' + '<dd class="d2">' + val.station_name + '</dd>' + '<dd class="d3">' + val.arrive_time + '</dd>' + '<dd class="d4">' + val.start_time + '</dd>' + '<dd class="d5">' + val.stopover_time + '</dd>' + '</dl>');
+                            state = 1
+                        });
+
+
+                    }
+                });
+            } else {
+                console.log('');
+                state = 0
+            }
+        })
+    });
+
+    $(document).ready(function () {
+        $('.price').click(function () {
+            $.ajax({
+                url: '/price/',
+                type: 'GET',
+                async: true,
+                data:{
+                    train_no: $(this).parents('.w5').prevAll().filter('.w1').children("div.train_no").find(".station_no").text(),
+                    from_station_no: $(this).parent().prevAll().filter("div.location_station_no").find("span").text(),
+                    to_station_no: $(this).parent().prevAll().filter("div.location_to_no").find("span").text(),
+                    seat_type: $(this).parent().prevAll().filter("div.seat_type").find("span").text(),
+                    train_data: $(this).parents(".w5").prevAll().filter(".w1").children("div.depart_time").find(".depart_time").text()
+                },
+                datatype: 'json',
+                success: function (data) {
+                    if (data.seat_type == 'OM9' || data.seat_type == 'O9M'){
+                        var id = data.train_no;
+                        $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.seconde_class_seat);
+                        $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.first_class_seat);
+                        $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.business_class)
+                    }
+                    else if (data.seat_type == 'OMP'){
+                        var id = data.train_no;
+                        $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.seconde_class_seat);
+                        $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.first_class_seat);
+                        $("#" + id).children("div.SK599-225").find("a").text("特等座");
+                        $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.principal_seat)
+                    }
+                    else if (data.seat_type == 'O9MO' || data.seat_type == 'O9OM'){
+                        var id = data.train_no;
+                        $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.seconde_class_seat);
+                        $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.soft_sleeper);
+                        $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.business_class);
+                        $("#" + id).children("div.SK599-225").after('<div class="SK599-225"><span><a style="cursor:pointer">无座</a> </span> <b>' + data.price_mes.none_seat + '</b> <strong class="TxtRed">余<em>0</em>张 </strong> </div>')
+
+                    }
+                    else if (data.seat_type == 'OO4'){
+                        var id = data.train_no;
+                        $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.seconde_class_seat);
+                        $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.soft_sleeper);
+                        $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.none_seat)
+                    }
+                    else if (data.seat_type == 'OMO' || data.seat_type == 'OOM'){
+                         var id = data.train_no;
+                         $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.seconde_class_seat);
+                         $("#" + id).children("div.SK599-224").replaceWith('<div class="SK599-224"><span><a style="cursor:pointer">一等座</a> </span> <b>' + data.price_mes.first_class_seat + '</b> <strong class="TxtRed">余<em>0</em>张 </strong> </div>');
+                         $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.none_seat)
+                    }
+                    else if (data.seat_type == 'F4'){
+                        var id = data.train_no;
+                          $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.soft_sleeper);
+                          $("#" + id).children("div.SK599-225").replaceWith('<div class="SK599-224"><span><a style="cursor:pointer">动  卧</a> </span> <b>' + data.price_mes.sleeper + '</b> <strong class="TxtRed">余<em>0</em>张 </strong> </div>')
+
+                    }
+                    else if (data.seat_type == 1413){
+                         var id = data.train_no;
+                         $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.hard_seat);
+                         $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.hard_sleeper);
+                         $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.soft_sleeper);
+                         $("#" + id).children("div.SK599-226").find("b").text(data.price_mes.none_seat);
+
+                    }
+                    else if (data.seat_type == 14163 || data.seat_type == 14613){
+                         var id = data.train_no;
+                          $("#" + id).children("div.SK599-201").find("b").text(data.price_mes.hard_seat);
+                          $("#" + id).children("div.SK599-224").find("b").text(data.price_mes.hard_sleeper);
+                          $("#" + id).children("div.SK599-225").find("b").text(data.price_mes.soft_sleeper);
+                          $("#" + id).children("div.SK599-225").after('<div class="SK599-225"><span><a style="cursor:pointer">高级软卧</a> </span> <b>' + data.price_mes.advanced_soft_sleeper + '</b> <strong class="TxtRed">余<em>0</em>张 </strong> </div>');
+                          $("#" + id).children("div.SK599-226").find("b").text(data.price_mes.none_seat);
+                    }
+                }
+
+            })
+        })
+    });
+
+    $(document).ready(function () {
+        $(".qp_btn1").click(function () {
+            var elem=$(this).attr("ID");
+            var train_no=$(this).parents(".w6").prevAll(".w1").find("strong").text();
+            var train_data=$(this).parents(".w6").prevAll(".w1").find("div.depart_time").find("span").text();
+            var from_data=$(this).parents(".w6").prevAll(".w2").find("strong").text();
+            var from_station=$(this).parents(".w6").prevAll(".w2").find("span").text();
+            var times=$(this).parents(".w6").prevAll(".w4").find("strong").text();
+            var to_data=$(this).parents(".w6").prevAll(".w3").find("strong").text();
+            var to_station=$(this).parents(".w6").prevAll(".w3").find("span").text();
+            var seat_type=$(this).parents(".w6").prev().find("div." + elem).find("a").text();
+            $("#train_no").attr("value", train_no);
+            $("#train_data").attr("value", train_data);
+            $("#from_data").attr("value", from_data);
+            $("#from_station").attr("value", from_station);
+            $("#times").attr("value", times);
+            $("#to_data").attr("value", to_data);
+            $("#to_station").attr("value", to_station);
+            $("#seat_type").attr("value", seat_type);
+
+        })
+    })
+
+</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

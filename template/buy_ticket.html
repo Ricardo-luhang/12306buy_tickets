@@ -1,0 +1,160 @@
+<html>
+<head id="ctl00_head1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://webresource.ctrip.com/ResTrainOnline/R4/TrainBooking/CSS/booking.css?releaseno=2018_8_14_15_36_57.css"
+          type="text/css" rel="stylesheet">
+    <title>
+        订单中心
+    </title>
+</head>
+ <form name="aspnetForm" method="post" action="/buy/" id="aspnetForm">
+<div>
+<div class="w1180 wrapper">
+    <div id="UpdatePanel1">
+        <div class="main_box">
+            <div class="main_wrap">
+                <div id="panelsingle" class="form_panel">
+                    <h3>车次信息</h3>
+                    <div class="form_field ticket">
+                        <table class="tb_train_info2" width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td style="width:60px;">
+                                    <p class="date">{{ para.train_date }}</p>
+                                    <strong class="checi"> {{ para.train_no }}</strong>
+                                    <a id="hlSingleTravel" class="revise" href="/select/">修改车次</a>
+                                </td>
+                                <td style="width:130px;" class="text_right">
+                                    <span class="station">{{ para.from_station }}</span>
+                                    <span class="time">{{ para.from_data }}</span>
+                                </td>
+                                <td style="width:200px;" class="text_center">
+                                    <b class="line_arrow"></b>
+                                    <div class="consuming"><i></i>{{ para.times }}</div>
+                                </td>
+                                <td style="width:130px;">
+                                    <span class="station">{{ para.to_station }}</span>
+                                    <span class="time">{{ para.to_data }}</span>
+                                    <i></i>
+                                </td>
+                                <td style="width:auto;" class="text_right">
+
+								<span class="base_txtdiv" data-role="jmp" data-params="{
+									options:
+										{
+											 type: &quot;jmp_text&quot;,
+											 template:&quot;#jmp_text&quot;,
+											 classNames:{
+												boxType:&quot;jmp_text&quot;
+											 },
+											 &quot;content&quot;:{
+												&quot;txt&quot;:&quot;退票说明：<br/>1.代购成功，未取票且发车前时间大于35分钟，可进入“我的携程”，点击火车订单根据提示申请退票；发车前15天以内的退票，铁路局将对每张车票按梯次收取退票手续费。<br/>2.代购成功，已取票或发车前时间小于35分钟，需您自行携带购票时所使用的乘车人有效证件原件和火车票在发车前去火车站退票窗口办理退票。<br/>3.往返、联程车票如遇到其中一程车次停运，另一程未停运的情况，未停运车次如需退票，铁路局也会按照退票标准收取对应手续费。 <br/>4. 2月1号至3月12号改签或者变更到站后的乘车日期在春运期间的，退票时一律按开车时间不足24小时的标准（20%）核收手续费。<br/>改签说明：<br/>1.未取纸质票，且离发车时间大于35分钟，可改签等于或低于原车票票价的车次。其他不能在线改签的情况需在发车前至火车站窗口办理。<br/>2.开车前48小时以上，可改签至预售期内有余票的车次。开车前48小时以内，可改签至票面当天24：00之前有余票的车次，不办理票面日期次日及以后的改签。<br/>3.新车票票价低于原车票的，退还差额，对差额部分核收退票费并执行现行退票费标准,详情请参考本页的《产品代购协议》。<br/>4.新车票票价高于原车票的，需重新支付车票费用，原车票费用15个工作日内退回,详情请参考本页的《产品代购协议》。 &quot;
+											},
+                                            css: { maxWidth: &quot;505&quot;, minWidth: &quot;260&quot; }
+									}
+								}">退改签说明</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                    <div class="wt_ticket">
+                        <div>
+                            {{ para.seat_type }}&nbsp;&nbsp;<span class="base_price"></span>
+
+
+                        </div>
+                        <p class="tgrey mtop10" style="display: none;">
+                            自取票卧铺上\下是随机分配的，先按参考价收费，差价1-7个工作日退回。为老人或孕妇购买下铺票，
+
+                            您可以选择送票上门（可指定购买下铺票）或到车站，代售点购买。
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="form_panel">
+                    <h3>乘客信息</h3>
+                    <div style="margin: 15px 0px;" id="loginMiddle"></div>
+                    <div class="passenger_list" style="display: none;" id="divFilterPassenger">
+                    </div>
+                    <div class="form_field p_info">
+
+                        <div id="divPassengerAdult1" style="display: block;" class="single_passenger">
+                            <div>
+                                <strong class="title">第1位乘客-成人票</strong><a name="aClear"
+                                                                           href="javascript:void(0)">清空</a>
+                            </div>
+
+                            <table class="tb_form" width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <th style="font-size: 10px">姓名</th>
+                                    <td>
+                                        <div>
+                                            <input class="input_text name" placeholder="请按所持证件填写乘客姓名（有中文姓名务必填写中文）"
+                                                   style="color: #999;width: 308px;" type="text">
+                                            <span class="icon_tip"></span>
+                                        </div>
+                                        <div class="block_alert force_prompt errorPassengerNameEmpty"
+                                             style="display: none;">
+                                            <b></b>请按照购票所持证件填写中文或英文姓名
+                                        </div>
+                                        <div class="block_alert errorPassengerNameWrong" style="display: none;">
+                                            <b></b>请确认您提交的姓名与证件上姓名是否一致
+                                        </div>
+                                        <div class="block_alert errorPassengerNameRepeat" style="display: none;">
+                                            <b></b>乘客姓名不能重复
+                                        </div>
+                                        <div class="block_inform noticePassengerNameEng"
+                                             style="width: 560px;height:45px;display: none;">
+                                            <b class="icon_notice"></b>请按照购票所持证件上的姓名填写，若既有中文名字也有英文名字，请填写中文名字。若填写英文名字，请按“姓/名”的形式填写，如LastName/FirstName或LastName/FirstName/MiddleName
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="font-size: 10px">证件信息</th>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a href="#" class="current" style="font-size: 10px">身份证</a>
+                                        </div>
+                                        <input name="" class="input_text cardNo bigcode" placeholder="证件号码"
+                                               style="color: #999;width: 158px;height: 25px" maxlength="50" type="text">
+                                        <span class="base_txtgray"></span>
+                                        <div class="block_alert force_prompt errorPassengerCardNoEmpty"
+                                             style="display: none;">
+                                            <b></b>请填写所选证件号码
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_box">
+                            <a href="javascript:void(0)" class="btn_add_p" id="addPassenger"><b></b>添加乘客</a> <span
+                                id="fenkaixiadan" style="display: none; margin-left: 10px;color: #888"><b
+                                class="icon_notice"></b>若有多名乘客，建议分开下单，抢票成功率更高哦!</span>
+                            <span class="side_alert" id="passengerNumberPrompt" style="display: none;"><i></i><b>
+                            </b>一张订单最多添加5名乘客，如有更多人出行，请另行下单预订。</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btn_box" style="margin: 20px 0 50px;">
+
+                    <a class="go_back" href="/select/">&lt; 返回上一页</a>
+                    <input name="ctl00$MainContentPlaceHolder$btnNext" value="立即抢票" id="btnNext" class="btn_check" type="submit">
+                    <img id="imgLoading" style="display: none;" src="http://pic.c-ctrip.com/common/loading.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ </form>
+</html>
